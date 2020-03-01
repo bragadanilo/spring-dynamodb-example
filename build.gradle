@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.2.5.RELEASE'
+	id 'org.springframework.boot' version '1.5.9.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
 }
@@ -21,10 +21,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
-
-	compile group: 'com.github.derjust', name: 'spring-data-dynamodb', version: '5.1.0'
+	compile group: 'com.github.derjust', name: 'spring-data-dynamodb', version: '4.5.0'
+	//compile  group: 'io.github.boostchicken', name: 'spring-data-dynamodb', version: '5.2.0-SNAPSHOT'
+	//compile group: 'org.springframework.data', name: 'spring-data-commons', version: '1.11.6.RELEASE'
 
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'

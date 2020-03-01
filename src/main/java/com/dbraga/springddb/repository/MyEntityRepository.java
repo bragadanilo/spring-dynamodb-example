@@ -10,4 +10,5 @@ import java.util.List;
 public interface MyEntityRepository extends CrudRepository<MyEntity, String> {
 
     List<MyEntity> findByName(String name);
+    List<MyEntity> findById(String id);
 }
